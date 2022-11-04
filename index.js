@@ -293,14 +293,20 @@ Use addArtist to do the following:
 
 function addArtist(arr, name, years, genre, nat, bio) {
   const newArr = arr;
-  const obj = [{
-    "name": name,
-    "years": years,
-    "genre": genre,
-    "nationality": nat,
-    "bio": bio
-  }];
-  newArr.push(obj);
+  // const obj = {
+  //   "name": name,
+  //   "years": years,
+  //   "genre": genre,
+  //   "nationality": nat,
+  //   "bio": bio
+  // };
+  newArr.push({
+      "name": name,
+      "years": years,
+      "genre": genre,
+      "nationality": nat,
+      "bio": bio
+    });
   return newArr;
 }
 
